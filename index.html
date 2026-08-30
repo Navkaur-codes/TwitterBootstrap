@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport tag: required for Bootstrap's responsive/mobile-first layout to work -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Guru Nanak Dev Engineering College, Ludhiana - established 1956. NAAC 'A' Grade, UGC autonomous, affiliated to IKGPTU. Programmes, departments, notices and admission helplines.">
+  <title>Guru Nanak Dev Engineering College, Ludhiana</title>
+
+  <!-- Bootstrap 5 CSS and Bootstrap Icons, loaded from a CDN (no downloads needed) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<!-- data-bs-spy="scroll" is Bootstrap Scrollspy: it highlights the navbar link
+     of whichever section is currently on screen. -->
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="0px 0px -55%" data-bs-smooth-scroll="true"
+  tabindex="0">
+
+  <!-- Skip link: keyboard users can jump straight to the content -->
+  <a href="#main" class="visually-hidden-focusable btn btn-gold m-2">Skip to main content</a>
+
+  <header>
+    <!-- ================= Top utility bar ================= -->
+    <!-- d-none d-lg-block = hidden on small screens, shown from large screens up -->
+    <div class="bg-navy-deep text-white py-2 d-none d-lg-block">
+      <div class="container d-flex justify-content-between align-items-center small">
+        <div>
+          <i class="bi bi-geo-alt-fill text-gold me-1"></i>Gill Park, Gill Road, Ludhiana 141006, Punjab
+        </div>
+        <div class="d-flex gap-3">
+          <a href="tel:+911615064501" class="link-light text-decoration-none">
+            <i class="bi bi-telephone-fill text-gold me-1"></i>0161-5064501
+          </a>
+          <a href="mailto:principal@gndec.ac.in" class="link-light text-decoration-none">
+            <i class="bi bi-envelope-fill text-gold me-1"></i>principal@gndec.ac.in
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Navbar ================= -->
+    <!-- navbar-expand-xl = full horizontal menu from the xl breakpoint (1200px) up,
+         collapsed into a hamburger button below that. We use xl rather than lg
+         because this menu has enough items that it would wrap on a 1000px screen. -->
+    <nav id="mainNav" class="navbar navbar-expand-xl navbar-dark site-navbar sticky-top py-3">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+          <i class="bi bi-mortarboard-fill text-gold fs-3"></i>
+          <span class="fw-bold">GNDEC <span class="fw-normal d-none d-sm-inline">Ludhiana</span></span>
+        </a>
+
+        <!-- The toggler button controls the collapse below it via data-bs-target -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-xl-center text-nowrap">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#programmes">Programmes</a></li>
+
+            <!-- Bootstrap dropdown component -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#departments" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Departments</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#departments">All Departments</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="https://cse.gndec.ac.in/" target="_blank" rel="noopener">Computer
+                    Science &amp; Engineering</a></li>
+                <li><a class="dropdown-item" href="https://it.gndec.ac.in/" target="_blank" rel="noopener">Information
+                    Technology</a></li>
+                <li><a class="dropdown-item" href="https://mba.gndec.ac.in/" target="_blank" rel="noopener">Business
+                    Administration</a></li>
+                <li><a class="dropdown-item" href="https://mca.gndec.ac.in" target="_blank" rel="noopener">Computer
+                    Applications</a></li>
+                <li><a class="dropdown-item" href="https://architecture.gndec.ac.in/" target="_blank"
+                    rel="noopener">School of Architecture</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#notices">Notices</a></li>
+            <li class="nav-item"><a class="nav-link" href="#campus">Campus Life</a></li>
+            <li class="nav-item"><a class="nav-link" href="#placements">Placements</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-xl-3 mt-2 mt-xl-0">
+              <a class="btn btn-gold btn-sm px-3" href="https://admission.gndec.ac.in/" target="_blank"
+                rel="noopener">Apply Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= Hero ================= -->
+    <section id="top" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-7 reveal">
+            <p class="text-gold fw-semibold mb-2">
+              <i class="bi bi-award-fill me-1"></i>Established 1956 &middot; Nankana Sahib Education Trust
+            </p>
+            <!-- Only one <h1> on the page -->
+            <h1 class="hero-title display-4 mb-3">Guru Nanak Dev Engineering College, Ludhiana</h1>
+            <p class="lead text-white-50 mb-4">
+              A UGC autonomous, NAAC &lsquo;A&rsquo; Grade institution affiliated to I.K. Gujral Punjab Technical
+              University &mdash; committed to bringing quality technical education to rural Punjab.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#programmes" class="btn btn-gold btn-lg px-4">
+                <i class="bi bi-journal-bookmark-fill me-2"></i>Explore Programmes
+              </a>
+              <a href="https://admission.gndec.ac.in/" target="_blank" rel="noopener"
+                class="btn btn-outline-light btn-lg px-4">
+                Admissions 2026-27 <i class="bi bi-box-arrow-up-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick-access card: the four things a student usually looks for -->
+          <div class="col-lg-5 reveal">
+            <div class="card border-0 shadow-lg">
+              <div class="card-body p-4">
+                <h2 class="h5 card-title mb-3">Quick Links for Students</h2>
+                <!-- list-group with flush styling (no outer border) -->
+                <div class="list-group list-group-flush">
+                  <a href="#notices" class="list-group-item list-group-item-action d-flex align-items-center gap-3">
+                    <i class="bi bi-megaphone-fill text-gold"></i> Latest Notices
+                  </a>
+                  <a href="https://academics.gndec.ac.in/programs/" target="_blank" rel="noopener"
+                    class="list-group-item list-group-item-action d-flex align-items-center gap-3">
+                    <i class="bi bi-mortarboard-fill text-gold"></i> Programmes Offered
+                  </a>
+                  <a href="http://library.gndec.ac.in/" target="_blank" rel="noopener"
+                    class="list-group-item list-group-item-action d-flex align-items-center gap-3">
+                    <i class="bi bi-book-half text-gold"></i> Central Library
+                  </a>
+                  <a href="https://www.tnpgndec.com" target="_blank" rel="noopener"
+                    class="list-group-item list-group-item-action d-flex align-items-center gap-3">
+                    <i class="bi bi-briefcase-fill text-gold"></i> Training &amp; Placement
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Accreditation strip ================= -->
+    <section class="bg-surface py-4 border-bottom">
+      <div class="container">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-2 gap-md-3 mb-0">
+          <li><span class="badge text-bg-light border fs-6 fw-normal py-2 px-3">AICTE Approved</span></li>
+          <li><span class="badge text-bg-light border fs-6 fw-normal py-2 px-3">UGC Autonomous (2012)</span></li>
+          <li><span class="badge text-bg-light border fs-6 fw-normal py-2 px-3">NAAC &lsquo;A&rsquo; Grade</span></li>
+          <li><span class="badge text-bg-light border fs-6 fw-normal py-2 px-3">ISO 9001:2015 Certified</span></li>
+          <li><span class="badge text-bg-light border fs-6 fw-normal py-2 px-3">Affiliated to IKGPTU</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= About, Vision, Mission ================= -->
+    <section id="about" class="py-5">
+      <div class="container py-lg-4">
+        <!-- Campus photo beside the text. align-items-center keeps the image
+             vertically centred against the taller text column. -->
+        <div class="row g-5 align-items-center mb-5">
+
+          <div class="col-lg-5 reveal">
+            <figure class="mb-0">
+              <!-- loading="lazy" tells the browser not to download this image
+                   until the user scrolls near it. -->
+              <img src="images/home.jpg" class="img-fluid rounded shadow" width="800" height="600" loading="lazy"
+                alt="The main entrance block of Guru Nanak Dev Engineering College, Ludhiana, with the driveway and lawns in front of it">
+              <figcaption class="small text-secondary mt-2 mb-0">
+                <i class="bi bi-geo-alt me-1"></i>The main entrance block, GNDEC campus, Gill Road, Ludhiana.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-7 reveal">
+            <h2 class="section-title h1 mb-4">About the College</h2>
+            <p>
+              Guru Nanak Dev Engineering College was established in <strong>1956</strong> under the
+              Nankana Sahib Education Trust and is today one of Punjab&rsquo;s oldest and best known
+              engineering institutions. It is approved by AICTE, affiliated to I.K. Gujral Punjab
+              Technical University, and was granted <strong>autonomous status by the UGC in 2012</strong>.
+            </p>
+            <p>
+              The college is accredited with an <strong>&lsquo;A&rsquo; Grade by NAAC</strong>, is ISO
+              9001:2015 certified, and appeared in the NIRF 200&ndash;250 band in 2021. Around
+              <strong>30,000 graduates and 7,500 postgraduates</strong> from GNDEC are employed across
+              the world.
+            </p>
+
+            <!-- blockquote for the official vision statement, quoted as-is -->
+            <figure class="border-start border-4 border-warning ps-3 mt-4">
+              <blockquote class="blockquote fs-6 mb-2">
+                <p class="fst-italic">
+                  &ldquo;Realization of Glimpses of a Golden India in the real(rural) India which lives and
+                  abounds in its villages. GNDEC will excel nationally and distinguish itself as a
+                  recognized pre-eminent leader to serve this 70% Brotherhood through its socioeconomic
+                  upliftment by exposure of the havenots to Engg. &amp; Technology thereby grooming them as
+                  technically competent and intellectually-vital Graduates through practically focused
+                  quality learning experiences, and thus assuring productive Careers for them.&rdquo;
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">Vision, Guru Nanak Dev Engineering College</figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+        <!-- Mission gets its own full-width block below, so the seven points can
+             sit in two columns instead of one long list. -->
+        <div class="row reveal">
+          <div class="col-12">
+            <h2 class="section-title h1 mb-4">Our Mission</h2>
+            <ul class="list-unstyled row row-cols-1 row-cols-md-2 g-3">
+              <li class="col d-flex gap-3">
+                <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+                <span>Upliftment of rural students through technical education.</span>
+              </li>
+              <li class="col d-flex gap-3">
+                <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+                <span>Respond to local societal needs by developing selected targeted research projects.</span>
+              </li>
+              <li class="col d-flex gap-3">
+                <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+                <span>Quality training programmes in need-based modern technology.</span>
+              </li>
+              <li class="col d-flex gap-3">
+                <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+                <span>Maintain state-of-the-art infrastructure in laboratories.</span>
+              </li>
+              <li class="col d-flex gap-3">
+                <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+                <span>Promote a culture of self-employment.</span>
+              </li>
+              <li class="col d-flex gap-3">
+                <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+                <span>Impart non-formal education to unemployed youth.</span>
+              </li>
+              <li class="col d-flex gap-3">
+                <i class="bi bi-check-circle-fill text-gold fs-5"></i>
+                <span>Inculcate moral, ethical and spiritual values in education at all levels.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Statistics ================= -->
+    <section class="bg-navy text-white py-5">
+      <div class="container py-lg-3">
+        <!-- row-cols-* controls how many columns appear at each screen size -->
+        <div class="row row-cols-2 row-cols-lg-4 g-4 text-center">
+
+          <div class="col">
+            <p class="display-5 fw-bold text-gold mb-1 reveal" data-count="1956">0</p>
+            <p class="mb-0 text-white-50">Established</p>
+          </div>
+          <div class="col">
+            <p class="display-5 fw-bold text-gold mb-1 reveal" data-count="30000" data-suffix="+">0</p>
+            <p class="mb-0 text-white-50">Graduates Worldwide</p>
+          </div>
+          <div class="col">
+            <p class="display-5 fw-bold text-gold mb-1 reveal" data-count="10">0</p>
+            <p class="mb-0 text-white-50">Departments</p>
+          </div>
+          <div class="col">
+            <p class="display-5 fw-bold text-gold mb-1 reveal" data-count="70" data-suffix="%">0</p>
+            <p class="mb-0 text-white-50">Rural Student Intake</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Programmes ================= -->
+    <section id="programmes" class="py-5 bg-surface">
+      <div class="container py-lg-4">
+
+        <div class="text-center mb-5 reveal">
+          <h2 class="section-title h1 text-center">Programmes Offered</h2>
+          <p class="text-secondary mb-0">Approved intake as published by the college.</p>
+        </div>
+
+        <!-- Bootstrap Tabs: the buttons carry data-bs-toggle="tab" and point at
+             the id of the pane they should show. No JavaScript of our own needed. -->
+        <ul class="nav nav-tabs justify-content-center mb-4 reveal" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#ug-pane" type="button" role="tab"
+              aria-controls="ug-pane" aria-selected="true">Undergraduate</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pg-pane" type="button" role="tab"
+              aria-controls="pg-pane" aria-selected="false">Postgraduate</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#research-pane" type="button" role="tab"
+              aria-controls="research-pane" aria-selected="false">Research</button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+
+          <!-- Undergraduate -->
+          <div class="tab-pane fade show active" id="ug-pane" role="tabpanel">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Tech. Computer Science &amp; Engineering</span>
+                    <span class="badge text-bg-secondary">360 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Tech. Information Technology</span>
+                    <span class="badge text-bg-secondary">180 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Tech. Civil Engineering</span>
+                    <span class="badge text-bg-secondary">120 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Tech. Electrical Engineering</span>
+                    <span class="badge text-bg-secondary">120 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Tech. Electronics &amp; Communication Engineering</span>
+                    <span class="badge text-bg-secondary">120 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Tech. Mechanical Engineering</span>
+                    <span class="badge text-bg-secondary">120 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Tech. Robotics &amp; Artificial Intelligence</span>
+                    <span class="badge text-bg-secondary">60 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">BCA &mdash; Bachelor of Computer Applications</span>
+                    <span class="badge text-bg-secondary">180 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">BBA &mdash; Bachelor of Business Administration</span>
+                    <span class="badge text-bg-secondary">60 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Com. (Entrepreneurship)</span>
+                    <span class="badge text-bg-secondary">60 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Voc. (Interior Design)</span>
+                    <span class="badge text-bg-secondary">30 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">B.Tech. Civil / Mechanical &mdash; Lateral Entry (working
+                      professionals)</span>
+                    <span class="badge text-bg-secondary">30 + 30 seats</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Postgraduate -->
+          <div class="tab-pane fade" id="pg-pane" role="tabpanel">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">MBA &mdash; Master of Business Administration</span>
+                    <span class="badge text-bg-secondary">60 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">MCA &mdash; Master of Computer Applications</span>
+                    <span class="badge text-bg-secondary">60 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">M.Tech. Computer Science &amp; Engineering</span>
+                    <span class="badge text-bg-secondary">18 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">M.Tech. Computer Science &amp; Information Technology</span>
+                    <span class="badge text-bg-secondary">18 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">M.Tech. Electronics &amp; Communication Engineering</span>
+                    <span class="badge text-bg-secondary">12 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">M.Tech. Power Engineering</span>
+                    <span class="badge text-bg-secondary">12 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">M.Tech. Production Engineering</span>
+                    <span class="badge text-bg-secondary">12 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">M.Tech. Structural Engineering</span>
+                    <span class="badge text-bg-secondary">12 seats</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm hover-lift">
+                  <div class="card-body d-flex justify-content-between align-items-center gap-3">
+                    <span class="fw-semibold">M.Tech. Environmental Science &amp; Engineering</span>
+                    <span class="badge text-bg-secondary">6 seats</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Research -->
+          <div class="tab-pane fade" id="research-pane" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <span class="icon-circle mb-3"><i class="bi bi-mortarboard"></i></span>
+                    <h3 class="h5 card-title">Ph.D. Programmes</h3>
+                    <p class="card-text mb-0 text-secondary">
+                      Doctoral research is offered across the engineering branches of the college.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <span class="icon-circle mb-3"><i class="bi bi-lightbulb"></i></span>
+                    <h3 class="h5 card-title">QIP Centre</h3>
+                    <p class="card-text mb-0 text-secondary">
+                      GNDEC hosts a Quality Improvement Programme (QIP) Centre under AICTE.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="text-center mt-4 mb-0">
+          <a href="https://academics.gndec.ac.in/programs/" target="_blank" rel="noopener"
+            class="btn btn-primary px-4">
+            Full programme details <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ================= Departments ================= -->
+    <section id="departments" class="py-5">
+      <div class="container py-lg-4">
+
+        <div class="text-center mb-5 reveal">
+          <h2 class="section-title h1 text-center">Departments</h2>
+          <p class="text-secondary mb-0">Ten teaching departments across engineering, management and applied sciences.
+          </p>
+        </div>
+
+        <!-- Responsive card grid: 1 column on phones, 2 on tablets, 3 on desktops.
+             g-4 sets the gutter (gap) between the cards. -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-cpu"></i></span>
+                <h3 class="h5 card-title">Computer Science &amp; Engineering</h3>
+                <a href="https://cse.gndec.ac.in/" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none">Visit department <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-hdd-network"></i></span>
+                <h3 class="h5 card-title">Information Technology</h3>
+                <a href="https://it.gndec.ac.in/" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none">Visit department <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-buildings"></i></span>
+                <h3 class="h5 card-title">Civil Engineering</h3>
+                <p class="card-text text-secondary small mb-0">B.Tech, M.Tech (Structural, Environmental) and Ph.D.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-lightning-charge"></i></span>
+                <h3 class="h5 card-title">Electrical Engineering</h3>
+                <p class="card-text text-secondary small mb-0">B.Tech, M.Tech (Power Engineering) and Ph.D.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-broadcast-pin"></i></span>
+                <h3 class="h5 card-title">Electronics &amp; Communication Engineering</h3>
+                <p class="card-text text-secondary small mb-0">B.Tech, M.Tech and Ph.D.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-gear-wide-connected"></i></span>
+                <h3 class="h5 card-title">Mechanical &amp; Production Engineering</h3>
+                <p class="card-text text-secondary small mb-0">B.Tech, M.Tech (Production Engineering) and Ph.D.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-graph-up-arrow"></i></span>
+                <h3 class="h5 card-title">Business Administration</h3>
+                <a href="https://mba.gndec.ac.in/" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none">Visit department <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-code-square"></i></span>
+                <h3 class="h5 card-title">Computer Applications</h3>
+                <a href="https://mca.gndec.ac.in" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none">Visit department <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-rulers"></i></span>
+                <h3 class="h5 card-title">School of Architecture</h3>
+                <a href="https://architecture.gndec.ac.in/" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none">Visit department <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-thermometer-half"></i></span>
+                <h3 class="h5 card-title">Applied Science</h3>
+                <p class="card-text text-secondary small mb-0">Physics, Chemistry and Mathematics for all branches.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Notices ================= -->
+    <section id="notices" class="py-5 bg-surface">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+
+          <div class="col-lg-7 reveal">
+            <h2 class="section-title h1 mb-4">Notices &amp; Announcements</h2>
+
+            <!-- list-group replaces the scrolling marquee of the old site,
+                 so notices stay readable and can be tabbed through. -->
+            <div class="list-group shadow-sm">
+              <a href="https://admission.gndec.ac.in/spot_counselling/" target="_blank" rel="noopener"
+                class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h6 mb-1">Spot Counselling 2026-27</h3>
+                    <p class="mb-0 small text-secondary">Spot counselling details for the 2026-27 session.</p>
+                  </div>
+                  <span class="badge text-bg-warning flex-shrink-0">New</span>
+                </div>
+              </a>
+              <a href="https://admission.gndec.ac.in/waiting_list/" target="_blank" rel="noopener"
+                class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h6 mb-1">Waiting List 2026-27</h3>
+                    <p class="mb-0 small text-secondary">Waiting list for admissions to the 2026-27 session.</p>
+                  </div>
+                  <span class="badge text-bg-warning flex-shrink-0">New</span>
+                </div>
+              </a>
+              <a href="https://admission.gndec.ac.in/" target="_blank" rel="noopener"
+                class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h6 mb-1">Submission of Original Documents</h3>
+                    <p class="mb-0 small text-secondary">For students admitted in 2026.</p>
+                  </div>
+                  <span class="badge text-bg-secondary flex-shrink-0">Admissions</span>
+                </div>
+              </a>
+              <a href="https://www.gndec.ac.in/" target="_blank" rel="noopener"
+                class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h6 mb-1">Fee Notice &mdash; July to December 2026</h3>
+                    <p class="mb-0 small text-secondary">Fee schedule for the July&ndash;December 2026 term.</p>
+                  </div>
+                  <span class="badge text-bg-secondary flex-shrink-0">Accounts</span>
+                </div>
+              </a>
+              <a href="https://www.gndec.ac.in/" target="_blank" rel="noopener"
+                class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h6 mb-1">Alumni Scholarship Opportunities</h3>
+                    <p class="mb-0 small text-secondary">Scholarships supported by the GNDEC alumni network.</p>
+                  </div>
+                  <span class="badge text-bg-secondary flex-shrink-0">Scholarship</span>
+                </div>
+              </a>
+            </div>
+
+            <p class="small text-secondary mt-3 mb-0">
+              <i class="bi bi-info-circle me-1"></i>Notices link to the official GNDEC portals, which remain the
+              authoritative source.
+            </p>
+          </div>
+
+          <!-- Admission helplines: an accordion keeps four groups of numbers compact -->
+          <div class="col-lg-5 reveal">
+            <h2 class="section-title h1 mb-4">Admission Helpline</h2>
+
+            <div class="accordion shadow-sm" id="helplineAccordion">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <!-- data-bs-toggle="collapse" + data-bs-target = which panel opens -->
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#help1"
+                    aria-expanded="true" aria-controls="help1">
+                    B.Tech &amp; M.Tech
+                  </button>
+                </h3>
+                <!-- data-bs-parent makes only one panel stay open at a time -->
+                <div id="help1" class="accordion-collapse collapse show" data-bs-parent="#helplineAccordion">
+                  <div class="accordion-body d-grid gap-2">
+                    <a href="tel:+919041495448" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>9041495448</a>
+                    <a href="tel:+918968553073" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>8968553073</a>
+                    <a href="tel:+917696771769" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>7696771769</a>
+                    <a href="tel:+917710610448" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>7710610448</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#help2" aria-expanded="false" aria-controls="help2">
+                    BBA, B.Com &amp; MBA
+                  </button>
+                </h3>
+                <div id="help2" class="accordion-collapse collapse" data-bs-parent="#helplineAccordion">
+                  <div class="accordion-body d-grid gap-2">
+                    <a href="tel:+919815903230" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>9815903230</a>
+                    <a href="tel:+919417992553" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>9417992553</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#help3" aria-expanded="false" aria-controls="help3">
+                    BCA &amp; MCA
+                  </button>
+                </h3>
+                <div id="help3" class="accordion-collapse collapse" data-bs-parent="#helplineAccordion">
+                  <div class="accordion-body d-grid gap-2">
+                    <a href="tel:+919876700810" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>9876700810</a>
+                    <a href="tel:+919417271184" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>9417271184</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#help4" aria-expanded="false" aria-controls="help4">
+                    B.Arch &amp; B.Voc
+                  </button>
+                </h3>
+                <div id="help4" class="accordion-collapse collapse" data-bs-parent="#helplineAccordion">
+                  <div class="accordion-body d-grid gap-2">
+                    <a href="tel:+918427866335" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>8427866335</a>
+                    <a href="tel:+917696521055" class="text-decoration-none"><i
+                        class="bi bi-telephone me-2"></i>7696521055</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <a href="https://wa.me/917347200448" target="_blank" rel="noopener"
+              class="btn btn-success w-100 mt-3 py-2">
+              <i class="bi bi-whatsapp me-2"></i>WhatsApp Admissions &mdash; 73472-00448
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Campus Life ================= -->
+    <section id="campus" class="py-5">
+      <div class="container py-lg-4">
+
+        <div class="text-center mb-5 reveal">
+          <h2 class="section-title h1 text-center">Campus Life &amp; Facilities</h2>
+          <p class="text-secondary mb-0">Learning, sport and service outside the classroom.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-book-half"></i></span>
+                <h3 class="h5 card-title">Central Library</h3>
+                <p class="card-text text-secondary small">Books, journals and digital resources for all programmes.</p>
+                <a href="http://library.gndec.ac.in/" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none small">Library portal <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-pc-display"></i></span>
+                <h3 class="h5 card-title">Computer Centre</h3>
+                <p class="card-text text-secondary small">Central computing facility and campus IT services.</p>
+                <a href="http://cc.gndec.ac.in" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none small">Computer Centre <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-trophy"></i></span>
+                <h3 class="h5 card-title">Sports</h3>
+                <p class="card-text text-secondary small">GNDEC has been the overall sports champion of IKGPTU.</p>
+                <a href="http://sports.gndec.ac.in" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none small">Sports department <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-house-door"></i></span>
+                <h3 class="h5 card-title">Hostels</h3>
+                <p class="card-text text-secondary small">On-campus residence with published hostel rules.</p>
+                <a href="https://gndec.ac.in/hostel_rules.html" target="_blank" rel="noopener"
+                  class="stretched-link text-decoration-none small">Hostel rules <i
+                    class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-people"></i></span>
+                <h3 class="h5 card-title">NSS</h3>
+                <p class="card-text text-secondary small mb-0">Over 1,000 volunteers enrol in the National Service
+                  Scheme each year.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col reveal">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-body">
+                <span class="icon-circle mb-3"><i class="bi bi-shield-check"></i></span>
+                <h3 class="h5 card-title">NCC</h3>
+                <p class="card-text text-secondary small mb-0">A cadet strength of 106 across the college units.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Placements ================= -->
+    <!-- Note: no placement percentages, packages or recruiter names are shown here,
+         because those figures are not published on the official reference site.
+         Add them only when a verified source is available. -->
+    <section id="placements" class="py-5 bg-navy text-white">
+      <div class="container py-lg-3">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-7 reveal">
+            <h2 class="section-title h1 mb-4">Training &amp; Placement</h2>
+            <p class="text-white-50">
+              The Training &amp; Placement Cell coordinates campus recruitment, internships and
+              pre-placement training for students of every department. The college has been
+              <strong class="text-white">accredited twice by TCS</strong> for placements, and roughly
+              30,000 graduates and 7,500 postgraduates of GNDEC are employed around the world.
+            </p>
+            <a href="https://www.tnpgndec.com" target="_blank" rel="noopener" class="btn btn-gold px-4">
+              Visit the T&amp;P portal <i class="bi bi-box-arrow-up-right ms-1"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-5 reveal">
+            <div class="row row-cols-2 g-3 text-center">
+              <div class="col">
+                <div class="border border-secondary rounded p-3 h-100">
+                  <i class="bi bi-patch-check-fill text-gold fs-3"></i>
+                  <p class="mb-0 mt-2 small">TCS accredited twice</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="border border-secondary rounded p-3 h-100">
+                  <i class="bi bi-globe2 text-gold fs-3"></i>
+                  <p class="mb-0 mt-2 small">Alumni employed globally</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="border border-secondary rounded p-3 h-100">
+                  <i class="bi bi-easel text-gold fs-3"></i>
+                  <p class="mb-0 mt-2 small">Pre-placement training</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="border border-secondary rounded p-3 h-100">
+                  <i class="bi bi-building-check text-gold fs-3"></i>
+                  <p class="mb-0 mt-2 small">Campus recruitment drives</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section id="contact" class="py-5 bg-surface">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+
+          <div class="col-lg-5 reveal">
+            <h2 class="section-title h1 mb-4">Contact Us</h2>
+
+            <ul class="list-unstyled d-grid gap-3 mb-4">
+              <li class="d-flex gap-3">
+                <i class="bi bi-geo-alt-fill text-gold fs-5"></i>
+                <address class="mb-0">
+                  Guru Nanak Dev Engineering College,<br>
+                  Gill Park, Gill Road,<br>
+                  Ludhiana 141006, Punjab (India)
+                </address>
+              </li>
+              <li class="d-flex gap-3">
+                <i class="bi bi-telephone-fill text-gold fs-5"></i>
+                <span>
+                  Main office: <a href="tel:+911615064501" class="text-decoration-none">0161-5064501</a><br>
+                  Academic &amp; admission: <a href="tel:+911615064704" class="text-decoration-none">0161-5064704</a>
+                </span>
+              </li>
+              <li class="d-flex gap-3">
+                <i class="bi bi-envelope-fill text-gold fs-5"></i>
+                <a href="mailto:principal@gndec.ac.in" class="text-decoration-none">principal@gndec.ac.in</a>
+              </li>
+              <li class="d-flex gap-3">
+                <i class="bi bi-briefcase-fill text-gold fs-5"></i>
+                <span>Training &amp; Placement: <a href="tel:+911615064511"
+                    class="text-decoration-none">0161-5064511</a></span>
+              </li>
+              <li class="d-flex gap-3">
+                <i class="bi bi-book-fill text-gold fs-5"></i>
+                <span>Central Library: <a href="tel:+911615064597"
+                    class="text-decoration-none">0161-5064597 / 98</a></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7 reveal">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h3 class="h4 card-title mb-1">Student Enquiry</h3>
+                <p class="text-secondary small mb-4">
+                  <i class="bi bi-info-circle me-1"></i>Demo form &mdash; this website is frontend only, so nothing is
+                  sent to a server.
+                </p>
+
+                <!-- novalidate turns off the browser's own popups so Bootstrap
+                     can show its own validation styles instead. -->
+                <form id="enquiryForm" novalidate>
+                  <div class="row g-3">
+
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Full name</label>
+                      <input type="text" class="form-control" id="name" required>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" required>
+                      <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="phone" class="form-label">Phone number</label>
+                      <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}" required>
+                      <div class="invalid-feedback">Please enter a 10-digit phone number.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="programme" class="form-label">Programme of interest</label>
+                      <select class="form-select" id="programme" required>
+                        <option value="" selected disabled>Choose a programme</option>
+                        <option>B.Tech</option>
+                        <option>BCA / BBA / B.Com</option>
+                        <option>B.Voc (Interior Design)</option>
+                        <option>M.Tech</option>
+                        <option>MBA / MCA</option>
+                        <option>Ph.D.</option>
+                      </select>
+                      <div class="invalid-feedback">Please select a programme.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="message" class="form-label">Your question</label>
+                      <textarea class="form-control" id="message" rows="4" required></textarea>
+                      <div class="invalid-feedback">Please type your question.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary px-4">
+                        <i class="bi bi-send me-2"></i>Send Enquiry
+                      </button>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="bg-navy-deep text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+          <h2 class="h5 d-flex align-items-center gap-2">
+            <i class="bi bi-mortarboard-fill text-gold"></i>GNDEC Ludhiana
+          </h2>
+          <p class="text-white-50 small mb-0">
+            Guru Nanak Dev Engineering College, established 1956 under the Nankana Sahib Education
+            Trust. UGC autonomous, NAAC &lsquo;A&rsquo; Grade, affiliated to IKGPTU.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h3 class="h6 text-gold">Explore</h3>
+          <ul class="list-unstyled small d-grid gap-2 mb-0">
+            <li><a href="#about" class="link-light text-decoration-none">About</a></li>
+            <li><a href="#programmes" class="link-light text-decoration-none">Programmes</a></li>
+            <li><a href="#departments" class="link-light text-decoration-none">Departments</a></li>
+            <li><a href="#notices" class="link-light text-decoration-none">Notices</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3 class="h6 text-gold">Official Portals</h3>
+          <ul class="list-unstyled small d-grid gap-2 mb-0">
+            <li><a href="https://www.gndec.ac.in/" target="_blank" rel="noopener"
+                class="link-light text-decoration-none">Official GNDEC website</a></li>
+            <li><a href="https://admission.gndec.ac.in/" target="_blank" rel="noopener"
+                class="link-light text-decoration-none">Admissions</a></li>
+            <li><a href="https://academics.gndec.ac.in/programs/" target="_blank" rel="noopener"
+                class="link-light text-decoration-none">Academics</a></li>
+            <li><a href="https://www.tnpgndec.com" target="_blank" rel="noopener"
+                class="link-light text-decoration-none">Training &amp; Placement</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h3 class="h6 text-gold">Reach Us</h3>
+          <ul class="list-unstyled small d-grid gap-2 mb-0 text-white-50">
+            <li><i class="bi bi-geo-alt me-2"></i>Gill Park, Gill Road, Ludhiana 141006</li>
+            <li><i class="bi bi-telephone me-2"></i><a href="tel:+911615064501"
+                class="link-light text-decoration-none">0161-5064501</a></li>
+            <li><i class="bi bi-envelope me-2"></i><a href="mailto:principal@gndec.ac.in"
+                class="link-light text-decoration-none">principal@gndec.ac.in</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <p class="small text-white-50 text-center mb-0">
+        © 2026 Guru Nanak Dev Engineering College, Ludhiana. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button, shown by JavaScript after scrolling -->
+  <a href="#top" class="btn btn-gold back-to-top rounded-circle p-3 lh-1" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Bootstrap bundle powers the navbar collapse, dropdown, tabs, accordion and scrollspy -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- SweetAlert2 is used once: the contact form confirmation -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

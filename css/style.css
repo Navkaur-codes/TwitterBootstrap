@@ -1,0 +1,208 @@
+/* ==========================================================================
+   GNDEC Redesign — custom CSS
+   Only what Bootstrap cannot reasonably do: brand colours, hero, animations.
+   Everything else (grid, spacing, responsiveness) comes from Bootstrap utilities.
+   ========================================================================== */
+
+/* Our brand palette in one place. CSS variables let us reuse a colour
+   by name instead of repeating the hex code everywhere. */
+:root {
+  --gndec-navy: #0b2545;
+  --gndec-navy-deep: #061a33;
+  --gndec-gold: #f0a500;
+  --gndec-surface: #f5f7fa;
+
+  /* Bootstrap 5.3 reads these variables, so overriding them re-themes
+     .btn-primary, .bg-primary, .text-primary, etc. without extra CSS. */
+  --bs-primary: #0b2545;
+  --bs-primary-rgb: 11, 37, 69;
+  --bs-link-color: #0b2545;
+  --bs-link-color-rgb: 11, 37, 69;
+  --bs-link-hover-color: #f0a500;
+}
+
+body {
+  /* scroll-padding stops the fixed navbar from covering section headings
+     when a nav link jumps to an anchor. */
+  scroll-padding-top: 5rem;
+}
+
+/* Bootstrap's .btn-primary is built from these per-component variables. */
+.btn-primary {
+  --bs-btn-bg: var(--gndec-navy);
+  --bs-btn-border-color: var(--gndec-navy);
+  --bs-btn-hover-bg: var(--gndec-navy-deep);
+  --bs-btn-hover-border-color: var(--gndec-navy-deep);
+  --bs-btn-active-bg: var(--gndec-navy-deep);
+  --bs-btn-active-border-color: var(--gndec-navy-deep);
+}
+
+/* Gold call-to-action button. Dark text on gold keeps contrast accessible. */
+.btn-gold {
+  --bs-btn-color: #0b2545;
+  --bs-btn-bg: var(--gndec-gold);
+  --bs-btn-border-color: var(--gndec-gold);
+  --bs-btn-hover-color: #0b2545;
+  --bs-btn-hover-bg: #ffb724;
+  --bs-btn-hover-border-color: #ffb724;
+  --bs-btn-focus-shadow-rgb: 240, 165, 0;
+}
+
+.bg-navy      { background-color: var(--gndec-navy) !important; }
+.bg-navy-deep { background-color: var(--gndec-navy-deep) !important; }
+.bg-surface   { background-color: var(--gndec-surface) !important; }
+.text-gold    { color: var(--gndec-gold) !important; }
+
+/* --------------------------------------------------------------------------
+   Navbar
+   -------------------------------------------------------------------------- */
+
+.site-navbar {
+  background-color: var(--gndec-navy);
+  transition: box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+/* JS adds .navbar-scrolled once the page is scrolled past the hero. */
+.site-navbar.navbar-scrolled {
+  background-color: var(--gndec-navy-deep);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.site-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+/* Bootstrap's scrollspy adds .active to the link of the section on screen. */
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus,
+.site-navbar .nav-link.active {
+  color: var(--gndec-gold);
+}
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
+
+.hero {
+  /* A CSS gradient instead of a photo: no image to download, always sharp. */
+  background: linear-gradient(135deg, var(--gndec-navy-deep) 0%, var(--gndec-navy) 55%, #14375f 100%);
+  color: #fff;
+  padding: 3.5rem 0;
+}
+
+/* From the lg breakpoint (992px) up, give the hero more breathing room. */
+@media (min-width: 992px) {
+  .hero {
+    padding: 6rem 0;
+  }
+}
+
+.hero-title {
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* --------------------------------------------------------------------------
+   Cards and small decorations
+   -------------------------------------------------------------------------- */
+
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 1.5rem rgba(11, 37, 69, 0.15);
+}
+
+/* Small round icon badge used on department and facility cards. */
+.icon-circle {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(11, 37, 69, 0.08);
+  color: var(--gndec-navy);
+  font-size: 1.35rem;
+}
+
+/* Short gold underline under every section heading. */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  margin-top: 0.75rem;
+  background-color: var(--gndec-gold);
+}
+
+.section-title.text-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tabs coloured to match the brand. */
+.nav-tabs .nav-link.active {
+  color: var(--gndec-navy);
+  border-bottom-color: transparent;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--gndec-navy);
+  background-color: rgba(240, 165, 0, 0.12);
+}
+
+/* --------------------------------------------------------------------------
+   Scroll animations
+   Elements start faded/shifted; JS adds .is-visible when they scroll into view.
+   -------------------------------------------------------------------------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Back-to-top button, hidden until the user scrolls down. */
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1030;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Respect users who ask their system to reduce motion. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hover-lift,
+  .site-navbar,
+  .back-to-top {
+    transition: none;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+  }
+}
